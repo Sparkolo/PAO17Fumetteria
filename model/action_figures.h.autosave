@@ -1,0 +1,35 @@
+#ifndef ACTION_FIGURES_H
+#define ACTION_FIGURES_H
+#include "nerd_stuff.h"
+
+
+class ActionFigures : public NerdStuff
+{
+private:
+    QString name;
+    QString manufacturer;
+    int size[3];
+
+public:
+    ActionFigures(QString cod="",  bool lim =false, double pr=0, QString nam="", QString manuf ="medio", int w=0, int h=0, int d=0 );
+
+    virtual int getPrezzo()const;
+    virtual QString getTipo()const;
+
+    QString getName()const;
+    QString getManufacturer()const;
+    int getWidth()const;
+    int getHeight()const;
+    int getDepth()const;
+
+    void setName(QString newName);
+    void setManufacturer(QString newManufacturer);
+    void setWidth(int newWidth);
+    void setHeight(int newHeight);
+    void setDepth(int newDepth);
+
+    virtual void loadTavolo(QXmlStreamReader & r);
+    virtual void saveTavolo(QXmlStreamWriter & w);
+};
+
+#endif // ACTION_FIGURES_H

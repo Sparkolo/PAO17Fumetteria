@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nerdstuff>
+    <comicbook>
+        <inventory>CB01</inventory>
+        <limited>0</limited>
+        <baseprice>3.5</baseprice>
+        <title>OnePiece</title>
+        <author>Eiichiro Oda</author>
+        <comictype>Manga</comictype>
+        <volumenumber>1</volumenumber>
+        <pagenumber>135</pagenumber>
+    </comicbook>
+    <comicbook>
+        <inventory>CB02</inventory>
+        <limited>0</limited>
+        <baseprice>3.5</baseprice>
+        <title>OnePiece</title>
+        <author>Eiichiro Oda</author>
+        <comictype>Manga</comictype>
+        <volumenumber>2</volumenumber>
+        <pagenumber>132</pagenumber>
+    </comicbook>
+    <comicbook>
+        <inventory>CB03</inventory>
+        <limited>0</limited>
+        <baseprice>7</baseprice>
+        <title>Amazing Spiderman</title>
+        <author>Stan Lee</author>
+        <comictype>Comic</comictype>
+        <volumenumber>1</volumenumber>
+        <pagenumber>254</pagenumber>
+    </comicbook>
+    <comicbook>
+        <inventory>CB04</inventory>
+        <limited>0</limited>
+        <baseprice>2.3</baseprice>
+        <title>Dylan Dog</title>
+        <author>Roberto Recchioni</author>
+        <comictype>Italiano</comictype>
+        <volumenumber>123</volumenumber>
+        <pagenumber>167</pagenumber>
+    </comicbook>
+    <comicbook>
+        <inventory>CB05</inventory>
+        <limited>0</limited>
+        <baseprice>12.3</baseprice>
+        <title>Asterix contro Cesare</title>
+        <author>Albert Uderzo</author>
+        <comictype>Franco-Belga</comictype>
+        <volumenumber>2</volumenumber>
+        <pagenumber>540</pagenumber>
+    </comicbook>
+    <dvd>
+        <inventory>DV01</inventory>
+        <limited>0</limited>
+        <baseprice>5.6</baseprice>
+        <title>La Citta Incantata</title>
+        <producer>Miyazaki</producer>
+        <dvdtype>Animazione</dvdtype>
+        <filmlength>125</filmlength>
+        <ageres>0</ageres>
+    </dvd>
+    <dvd>
+        <inventory>DV02</inventory>
+        <limited>0</limited>
+        <baseprice>5.6</baseprice>
+        <title>Ghost In The Shell</title>
+        <producer>Rupert Sanders</producer>
+        <dvdtype>Live Action</dvdtype>
+        <filmlength>132</filmlength>
+        <ageres>0</ageres>
+    </dvd>
+    <dvd>
+        <inventory>DV03</inventory>
+        <limited>0</limited>
+        <baseprice>3.29</baseprice>
+        <title>La Collina dei Conigli</title>
+        <producer>Richard Adams</producer>
+        <dvdtype>Animazione</dvdtype>
+        <filmlength>82</filmlength>
+        <ageres>0</ageres>
+    </dvd>
+    <actionfigure>
+        <inventory>AF01</inventory>
+        <limited>0</limited>
+        <baseprice>15.99</baseprice>
+        <name>Sanji Kick</name>
+        <manufacturer>Bandai</manufacturer>
+        <width>5</width>
+        <height>4</height>
+        <depth>2</depth>
+    </actionfigure>
+    <actionfigure>
+        <inventory>AF02</inventory>
+        <limited>0</limited>
+        <baseprice>25.99</baseprice>
+        <name>Jon Snow</name>
+        <manufacturer>Pop</manufacturer>
+        <width>10</width>
+        <height>8</height>
+        <depth>5</depth>
+    </actionfigure>
+    <actionfigure>
+        <inventory>AF03</inventory>
+        <limited>0</limited>
+        <baseprice>44.5</baseprice>
+        <name>SuperMan</name>
+        <manufacturer>Hasbro</manufacturer>
+        <width>14</width>
+        <height>25</height>
+        <depth>12</depth>
+    </actionfigure>
+</nerdstuff>

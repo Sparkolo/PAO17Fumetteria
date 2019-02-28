@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utenti>
+    <admin>
+        <nome>Gestore</nome>
+        <cognome>della Fumetteria</cognome>
+        <username>admin</username>
+        <password>admin</password>
+    </admin>
+    <base>
+        <nome>Utente</nome>
+        <cognome>Base</cognome>
+        <username>base</username>
+        <password>base</password>
+    </base>
+    <gold>
+        <nome>Utente</nome>
+        <cognome>Gold</cognome>
+        <username>gold</username>
+        <password>gold</password>
+    </gold>
+</utenti>

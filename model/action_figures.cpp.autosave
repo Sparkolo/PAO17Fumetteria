@@ -1,0 +1,50 @@
+#include "action_figures.h"
+
+// CONSTRUCTOR
+ActionFigures::ActionFigures(QString cod,  bool lim, double pr, QString nam, QString manuf, int w, int h, int d):NerdStuff(cod,lim,pr), name(nam), manufacturer(manuf) {
+    size = {w,h,d};
+}
+
+// GET METHODS
+QString ComicBook::getName()const{ return name;}
+QString ComicBook::getManufacturer()const{return manufacturer;}
+int ComicBook::getWidth()const{return size[0];}
+int ComicBook::getHeight()const{return size[1];}
+int ComicBook::getDepth()const{return size[2];}
+
+// SET METHODS
+void ComicBook::setName(QString newName){ title=newName; }
+void ComicBook::setManufacturer(QString newManufaturer){ author=newManufaturer;  }
+void ComicBook::setWidth(int newWidth){ comicType=newWidth; }
+void ComicBook::setHeight(int newHeight){ volumeNumber=newHeight; }
+void ComicBook::setDepth(int newDepth){ pageNumber=newDepth;}
+
+// PURE VIRTUAL
+QString ComicBook::getTipo() const{
+    return "ActionFigures";
+}
+
+int ComicBook::getPrezzo()const{
+   return 3;
+}
+
+// CLASS METHODS
+void ComicBook::loadTavolo(QXmlStreamReader & r){
+    NerdStuff::loadTavolo(r);
+    if(r.name()=="name")this->name=r.readElementText();
+    if(r.name()=="manufacturer")this->manufacturer=r.readElementText();
+    if(r.name()=="width")this->comicType=r.readElementText();
+    if(r.name()=="volumenumber")this->volumeNumber=r.readElementText().toInt();
+    if(r.name()=="pagenumber")this->pageNumber=r.readElementText().toInt();
+}
+
+void ComicBook::saveTavolo(QXmlStreamWriter & w){
+    w.writeStartElement("comicbook");
+    NerdStuff::saveTavolo(w);
+    w.writeTextElement("title",getTitle());
+    w.writeTextElement("author",getAuthor());
+    w.writeTextElement("comictype",getComicType());
+    w.writeTextElement("volumenumber",QString::number(getVolNumber()));
+    w.writeTextElement("pagenumber",QString::number(getPageNumber()));
+    w.writeEndElement();
+}
